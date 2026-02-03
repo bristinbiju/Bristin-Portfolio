@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
-import { Instagram, Linkedin, Twitter } from 'lucide-react';
+
+import { Instagram, Linkedin, Mail, Phone, Globe } from 'lucide-react';
 
 /**
  * Footer component cloned with pixel-perfect accuracy.
@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#000000] py-[80px] px-6 md:px-12 lg:px-24 border-t border-white/10">
       <div className="max-width-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12 md:gap-8">
-        
+
         {/* Left Column: Brand & Copyright */}
         <div className="flex flex-col gap-4 min-w-[200px]">
           <div className="flex items-center gap-2">
@@ -73,33 +73,54 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          {/* Contact Info */}
+          <div className="flex flex-col gap-5">
+            <h5 className="text-white text-[16px] font-semibold tracking-tight">Contact</h5>
+            <div className="flex flex-col gap-4">
+              <a href="mailto:bristinbiju123@gmail.com" className="flex items-center gap-2 group">
+                <div className="w-8 h-8 rounded-full bg-[#111] flex items-center justify-center border border-white/5 group-hover:border-[#007cc0] transition-colors">
+                  <Mail className="w-4 h-4 text-[#999] group-hover:text-white transition-colors" />
+                </div>
+                <span className="text-[#999999] text-[15px] group-hover:text-white transition-colors">bristinbiju123@gmail.com</span>
+              </a>
+              <a href="tel:+918590894407" className="flex items-center gap-2 group">
+                <div className="w-8 h-8 rounded-full bg-[#111] flex items-center justify-center border border-white/5 group-hover:border-[#007cc0] transition-colors">
+                  <Phone className="w-4 h-4 text-[#999] group-hover:text-white transition-colors" />
+                </div>
+                <span className="text-[#999999] text-[15px] group-hover:text-white transition-colors">+91 8590 894 407</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Right Column: Social Icons */}
         <div className="flex items-center gap-3">
-          <a 
-            href="https://twitter.com" 
-            className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#1A1A1A] border border-white/5 hover:border-white/20 hover:bg-[#252525] transition-all duration-200"
+          <a
+            href="https://www.behance.net/bristinbiju"
+            className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#1A1A1A] border border-white/5 hover:border-white/20 hover:bg-[#0057ff] transition-all duration-200 group"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Behance"
           >
-            <Twitter className="w-4 h-4 text-white" />
+            <Globe className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
           </a>
-          <a 
-            href="https://instagram.com" 
-            className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#1A1A1A] border border-white/5 hover:border-white/20 hover:bg-[#252525] transition-all duration-200"
+          <a
+            href="https://www.instagram.com/bristinbiju/"
+            className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#1A1A1A] border border-white/5 hover:border-white/20 hover:bg-[#E1306C] transition-all duration-200 group"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
           >
-            <Instagram className="w-4 h-4 text-white" />
+            <Instagram className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
           </a>
-          <a 
-            href="https://linkedin.com" 
-            className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#1A1A1A] border border-white/5 hover:border-white/20 hover:bg-[#252525] transition-all duration-200"
+          <a
+            href="https://www.linkedin.com/in/bristin-biju-832a4a1a6/"
+            className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#1A1A1A] border border-white/5 hover:border-white/20 hover:bg-[#0077b5] transition-all duration-200 group"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
-            <Linkedin className="w-4 h-4 text-white" />
+            <Linkedin className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
           </a>
         </div>
       </div>

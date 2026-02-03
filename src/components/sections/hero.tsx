@@ -45,8 +45,9 @@ const HeroSection: React.FC = () => {
         </h1>
 
         {/* Hero Description */}
-        <p className="max-w-[640px] text-[18px] md:text-[20px] text-[#999999] leading-[1.6] mb-12 px-4 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          Obsessed with typography, layout, and global results. From Dubai to the world, I help brands stand out and convert visitors into loyal customers.
+        <p className="max-w-[700px] text-[18px] md:text-[20px] text-[#999999] leading-[1.6] mb-12 px-4 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          Graphic designer and branding specialist with 4 years of agency experience. 
+          Handling clients across Dubai, Europe, and Africa to deliver obsessive detail in typography, layout, and high-conversion ads.
         </p>
 
         {/* CTA Section */}
