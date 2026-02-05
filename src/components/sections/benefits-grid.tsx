@@ -1,10 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
+
 
 const BenefitsGrid = () => {
   return (
-    <section 
-      id="benefits" 
+    <section
+      id="benefits"
       className="w-full bg-black py-[120px]"
     >
       <div className="container mx-auto px-6 max-w-[1200px]">
@@ -20,7 +20,7 @@ const BenefitsGrid = () => {
 
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
+
           {/* Tile 1: Global Reach */}
           <div className="bg-[#0a0a0a] border border-[rgba(255,255,255,0.1)] rounded-[24px] p-8 flex flex-col h-full overflow-hidden">
             <div className="mb-10">
@@ -66,7 +66,7 @@ const BenefitsGrid = () => {
               {/* Notification 2 */}
               <div className="bg-[#111111] p-4 rounded-[12px] border border-[rgba(255,255,255,0.05)] flex items-center gap-4">
                 <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center border border-white/10 text-white">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5a3.5 3.5 0 0 1-3.5-3.5z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" /><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" /><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" /><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" /><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5a3.5 3.5 0 0 1-3.5-3.5z" /></svg>
                 </div>
                 <div>
                   <h6 className="text-[14px] font-semibold text-white">Final Assets Sent</h6>
@@ -94,7 +94,7 @@ const BenefitsGrid = () => {
               {/* Chat Bubble Right */}
               <div className="flex items-start gap-3 justify-end">
                 <div className="bg-[#000000] p-3 rounded-tl-[16px] rounded-bl-[16px] rounded-br-[16px] border border-white/5 max-w-[80%]">
-                  <p className="text-[14px] text-white leading-snug">I'm on it. Delivering the first draft by tomorrow.</p>
+                  <p className="text-[14px] text-white leading-snug">I&apos;m on it. Delivering the first draft by tomorrow.</p>
                 </div>
               </div>
             </div>
@@ -105,10 +105,10 @@ const BenefitsGrid = () => {
             <div className="md:w-1/2">
               <h4 className="text-[24px] font-medium text-white mb-4">Obsessive Detail</h4>
               <p className="text-[#999999] text-[16px] leading-[1.6]">
-                Whether it's typography, layout, or color theory, I ensure every pixel serves a purpose. My background in high-conversion ads means I design for impact.
+                Whether it&apos;s typography, layout, or color theory, I ensure every pixel serves a purpose. My background in high-conversion ads means I design for impact.
               </p>
             </div>
-            
+
             <div className="md:w-1/2 w-full flex flex-wrap justify-center gap-4 relative">
               {/* Tool Icons Mockup */}
               {[
@@ -125,12 +125,12 @@ const BenefitsGrid = () => {
               ))}
               <div className="w-14 h-14 bg-black rounded-xl flex items-center justify-center border border-white/10 text-white shadow-xl">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M6 3h12l4 6-10 12L2 9l4-6z"/><path d="M11 3v18"/><path d="m5 13 6-3 6 3"/><path d="m2 9 20 0"/>
+                  <path d="M6 3h12l4 6-10 12L2 9l4-6z" /><path d="M11 3v18" /><path d="m5 13 6-3 6 3" /><path d="m2 9 20 0" />
                 </svg>
               </div>
               <div className="w-14 h-14 bg-black rounded-xl flex items-center justify-center border border-white/10 text-white shadow-xl">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
               </div>
             </div>

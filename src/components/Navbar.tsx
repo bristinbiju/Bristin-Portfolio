@@ -15,7 +15,7 @@ export function Navbar() {
   ];
 
   return (
-    <motion.header 
+    <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:py-6 md:px-12 glass border-b border-white/5"
@@ -23,12 +23,12 @@ export function Navbar() {
       <Link href="/" className="text-lg md:text-xl font-heading font-bold uppercase tracking-widest relative z-[60]">
         Bristin <span className="text-muted-foreground">Biju</span>
       </Link>
-      
+
       {/* Desktop Nav */}
       <nav className="hidden md:flex items-center gap-8">
         {navLinks.map((item) => (
-          <Link 
-            key={item.name} 
+          <Link
+            key={item.name}
             href={item.href}
             className="text-sm font-medium uppercase tracking-wider hover:text-muted-foreground transition-colors"
           >
@@ -39,11 +39,11 @@ export function Navbar() {
 
       <div className="flex items-center gap-4 relative z-[60]">
         <button className="hidden sm:block px-6 py-2 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">
-          Let's Talk
+          Let&apos;s Talk
         </button>
-        
+
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden p-2 text-foreground"
           aria-label="Toggle menu"
@@ -63,8 +63,8 @@ export function Navbar() {
             className="fixed inset-0 z-50 bg-background md:hidden flex flex-col items-center justify-center gap-8"
           >
             {navLinks.map((item) => (
-              <Link 
-                key={item.name} 
+              <Link
+                key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className="text-4xl font-bold uppercase tracking-tighter hover:text-muted-foreground transition-colors"
@@ -72,12 +72,12 @@ export function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <a 
+            <a
               href="#contact"
               onClick={() => setIsOpen(false)}
               className="mt-8 px-12 py-4 bg-primary text-primary-foreground text-sm font-bold uppercase tracking-widest"
             >
-              Let's Talk
+              Let&apos;s Talk
             </a>
           </motion.div>
         )}
